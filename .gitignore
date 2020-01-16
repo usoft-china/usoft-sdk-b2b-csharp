@@ -32,7 +32,6 @@ packages/*
 TestResults/*
 */obj/*
 */bin/*
-*/Properties/*
 
 *.zip
 
