@@ -1,0 +1,35 @@
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace com.usoft.sdk.b2b.utils
+{
+    public class JsonUtil
+    {
+        /// <summary>
+        /// Object To Json
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        public static string ToJSON(object obj)
+        {
+            return JsonConvert.SerializeObject(obj);
+        }
+        /// <summary>
+        /// Json To Object
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="jsonStr"></param>
+        /// <returns></returns>
+        public static T ToObject<T>(string jsonStr)
+        {
+            return JsonConvert.DeserializeObject<T>(jsonStr);
+        }
+
+    }
+}

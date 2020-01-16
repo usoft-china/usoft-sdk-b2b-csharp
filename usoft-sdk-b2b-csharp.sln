@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "usoft-sdk-b2b-csharp", "usoft-sdk-b2b-csharp\usoft-sdk-b2b-csharp.csproj", "{7A6BC40F-70E5-4470-8C06-6520F2097935}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "usoft-sdk-b2b-csharp.Test", "usoft-sdk-b2b-csharp.Test\usoft-sdk-b2b-csharp.Test.csproj", "{73803FD2-0891-4701-89F5-0B4FE64C1FF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A6BC40F-70E5-4470-8C06-6520F2097935}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A6BC40F-70E5-4470-8C06-6520F2097935}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A6BC40F-70E5-4470-8C06-6520F2097935}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A6BC40F-70E5-4470-8C06-6520F2097935}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73803FD2-0891-4701-89F5-0B4FE64C1FF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73803FD2-0891-4701-89F5-0B4FE64C1FF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73803FD2-0891-4701-89F5-0B4FE64C1FF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73803FD2-0891-4701-89F5-0B4FE64C1FF1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {09EF91EA-4B72-43BC-8645-828E11266ECD}
+	EndGlobalSection
+EndGlobal
