@@ -82,14 +82,16 @@ namespace usoft_sdk_b2b_csharp.Test
             orderSdk.UpdatePurchaseReplyStatus("123");
         }
 
-
-
+        /// <summary>
+        /// 获取当前时间戳（毫秒）
+        /// </summary>
+        /// <returns></returns>
         private long GetCurrentTimeUnix()
         {
             TimeSpan cha = (DateTime.Now - TimeZone.CurrentTimeZone.ToLocalTime(new System.DateTime(1970, 1, 1)));
             long t = (long)cha.TotalMilliseconds;
             return t;
         }
-     
+
     }
 }

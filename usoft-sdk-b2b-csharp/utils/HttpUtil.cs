@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,7 +11,7 @@ namespace com.usoft.sdk.b2b.utils
     class HttpUtil
     {
 
-        private static readonly HttpClient client = new HttpClient();
+        private static readonly HttpClient httpClient = new HttpClient();
 
         public static string DoGet(string url, Dictionary<string, string> dic, int timeout)
         {
@@ -26,7 +27,7 @@ namespace com.usoft.sdk.b2b.utils
         /// <returns></returns>
         public static string GetPath(string url, Dictionary<string, string> dic)
         {
-            String path = url;
+            string path = url;
             if (url != null && url.Length > 0 && dic != null && dic.Count > 0)
             {
                 StringBuilder sb = new StringBuilder(url);
@@ -51,8 +52,8 @@ namespace com.usoft.sdk.b2b.utils
             {
                 throw new Exception("url不能为空");
             }
-            client.Timeout = TimeSpan.FromMilliseconds(timeout);
-            HttpResponseMessage response = await client.GetAsync(url);
+            httpClient.Timeout = TimeSpan.FromMilliseconds(timeout);
+            HttpResponseMessage response = await httpClient.GetAsync(url);
             response.EnsureSuccessStatusCode();
             string result = await response.Content.ReadAsStringAsync();
             return result;
@@ -92,8 +93,12 @@ namespace com.usoft.sdk.b2b.utils
             {
                 throw new Exception("url不能为空");
             }
-            client.Timeout = TimeSpan.FromMilliseconds(timeout);
-            HttpResponseMessage response = await client.PostAsync(url, httpContent);
+            httpClient.Timeout = TimeSpan.FromMilliseconds(timeout);
+            //ExpectContinue必需为false,否则连接会被关闭
+            //参考：c# - NET4.5中异步POST方法的HttpResponseMessage中的异常(https://www.ojit.com/article/1774331)
+            //参考：HTTP之put/post请求头中的Expect:100-continue(https://blog.csdn.net/Swallow_he/article/details/94444766)
+            httpClient.DefaultRequestHeaders.ExpectContinue = false;
+            HttpResponseMessage response = await httpClient.PostAsync(url, httpContent);
             response.EnsureSuccessStatusCode();
             string result = await response.Content.ReadAsStringAsync();
             return result;
