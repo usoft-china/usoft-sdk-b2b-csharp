@@ -33,7 +33,6 @@ TestResults/*
 */obj/*
 */bin/*
 
-*.zip
 
 #rebel 热部署插件
 .rebel*

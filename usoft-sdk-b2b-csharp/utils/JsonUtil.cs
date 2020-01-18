@@ -11,6 +11,12 @@ namespace com.usoft.sdk.b2b.utils
 {
     public class JsonUtil
     {
+        private static readonly JsonSerializerSettings jsetting = new JsonSerializerSettings
+        {
+            //忽略默认值
+            DefaultValueHandling = DefaultValueHandling.Ignore
+        };
+
         /// <summary>
         /// Object To Json
         /// </summary>
@@ -18,7 +24,8 @@ namespace com.usoft.sdk.b2b.utils
         /// <returns></returns>
         public static string ToJSON(object obj)
         {
-            return JsonConvert.SerializeObject(obj);
+
+            return JsonConvert.SerializeObject(obj, jsetting);
         }
         /// <summary>
         /// Json To Object
@@ -28,7 +35,7 @@ namespace com.usoft.sdk.b2b.utils
         /// <returns></returns>
         public static T ToObject<T>(string jsonStr)
         {
-            return JsonConvert.DeserializeObject<T>(jsonStr);
+            return JsonConvert.DeserializeObject<T>(jsonStr, jsetting);
         }
 
     }
