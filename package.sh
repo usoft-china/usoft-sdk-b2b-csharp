@@ -1,6 +1,8 @@
 #!/bin/bash
 
-cd ./usoft-sdk-b2b-csharp/bin/Debug
+projectDir=/mnt/c/Users/wangcanyi/Documents/git-csharp/usoft-sdk-b2b-csharp
 
-zip ../../../dll-release/usoft-sdk-b2b-csharp.zip ./*
+cd $projectDir/usoft-sdk-b2b-csharp/bin/Debug
+
+zip $projectDir/dll-release/usoft-sdk-b2b-csharp.zip ./*
 
