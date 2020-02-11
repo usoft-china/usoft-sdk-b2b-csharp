@@ -3,20 +3,6 @@ name: default
 
 steps:
 
-- name: dll_package
-  image: usoft/protoc-gen-doc:3.6.1
-  commands:
-  - mkdir dll-release
-  - cd usoft-sdk-b2b-csharp/bin/Debug
-  - /bin/tar -cvf ../../../dll-release/usoft-sdk-b2b-csharp.tar *.*
-  - cd -
-  - /git_commit.sh ./
-  when:
-    branch:
-    - master
-    event:
-    - push
-
 - name: sync_github_master
   image: usoft/protoc-gen-doc:3.6.1
   commands:
