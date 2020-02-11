@@ -3,15 +3,24 @@ name: default
 
 steps:
 
-- name: sync_github_master
+- name: dll_package
   image: usoft/protoc-gen-doc:3.6.1
   commands:
-  - git remote add github git@github.com:usoft-china/usoft-sdk-b2b-csharp.git
   - mkdir dll-release
   - cd usoft-sdk-b2b-csharp/bin/Debug
   - /bin/tar -cvf ../../../dll-release/usoft-sdk-b2b-csharp.tar *.*
   - cd -
   - /git_commit.sh ./
+  when:
+    branch:
+    - master
+    event:
+    - push
+
+- name: sync_github_master
+  image: usoft/protoc-gen-doc:3.6.1
+  commands:
+  - git remote add github git@github.com:usoft-china/usoft-sdk-b2b-csharp.git
   - git push github master:master
   when:
     branch:
