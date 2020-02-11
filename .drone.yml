@@ -8,9 +8,9 @@ steps:
   commands:
   - git remote add github git@github.com:usoft-china/usoft-sdk-b2b-csharp.git
   - cd usoft-sdk-b2b-csharp/bin/Debug
-  - /bin/tar -cvf /drone/src/usoft-sdk-b2b-csharp/dll-release/usoft-sdk-b2b-csharp.tar *.*
-  - /git_commit.sh /drone/src/usoft-sdk-b2b-csharp
-  - cd /drone/src/usoft-sdk-b2b-csharp
+  - /bin/tar -cvf ../../../dll-release/usoft-sdk-b2b-csharp.tar *.*
+  - cd -
+  - /git_commit.sh ./
   - git push github master:master
   when:
     branch:
