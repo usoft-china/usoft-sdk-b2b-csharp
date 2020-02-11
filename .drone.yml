@@ -6,7 +6,7 @@ steps:
 - name: sync_github_master
   image: usoft/protoc-gen-doc:3.6.1
   commands:
-  - git remote add github git@github.com:usoft-china/usoft-sdk-b2b-csharp.git /usoft-sdk-b2b-csharp
+  - git remote add github git@github.com:usoft-china/usoft-sdk-b2b-csharp.git
   - cd usoft-sdk-b2b-csharp/bin/Debug
   - /bin/tar -cvf /usoft-sdk-b2b-csharp/dll-release/usoft-sdk-b2b-csharp.tar *.*
   - /git_commit.sh /usoft-sdk-b2b-csharp
