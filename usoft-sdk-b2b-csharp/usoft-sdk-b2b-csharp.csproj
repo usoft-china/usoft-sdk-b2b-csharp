@@ -45,10 +45,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="client\BaseSdk.cs" />
+    <Compile Include="client\OrderSellerSdk.cs" />
     <Compile Include="client\OrderSdk.cs" />
     <Compile Include="client\ProductSdk.cs" />
+    <Compile Include="entity\order\MessageLog.cs" />
     <Compile Include="entity\order\Purchase.cs" />
+    <Compile Include="entity\order\PurchaseDetail.cs" />
+    <Compile Include="entity\order\PurchaseDetailEnd.cs" />
     <Compile Include="entity\order\PurchaseReply.cs" />
+    <Compile Include="entity\order\SaleDown.cs" />
+    <Compile Include="entity\order\SaleDownDetail.cs" />
+    <Compile Include="entity\order\SaleDownDetailEnd.cs" />
+    <Compile Include="entity\order\SaleReply.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="entity\product\Product.cs" />
     <Compile Include="utils\HexUtil.cs" />
