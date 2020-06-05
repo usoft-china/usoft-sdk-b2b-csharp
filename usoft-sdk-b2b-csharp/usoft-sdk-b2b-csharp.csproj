@@ -44,25 +44,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="client\BaseSdk.cs" />
-    <Compile Include="client\OrderSellerSdk.cs" />
-    <Compile Include="client\OrderSdk.cs" />
-    <Compile Include="client\ProductSdk.cs" />
-    <Compile Include="entity\order\MessageLog.cs" />
-    <Compile Include="entity\order\Purchase.cs" />
-    <Compile Include="entity\order\PurchaseDetail.cs" />
-    <Compile Include="entity\order\PurchaseDetailEnd.cs" />
-    <Compile Include="entity\order\PurchaseReply.cs" />
-    <Compile Include="entity\order\SaleDown.cs" />
-    <Compile Include="entity\order\SaleDownDetail.cs" />
-    <Compile Include="entity\order\SaleDownDetailEnd.cs" />
-    <Compile Include="entity\order\SaleReply.cs" />
+    <Compile Include="client\v1\BaseSdk.cs" />
+    <Compile Include="client\v1\OrderSellerSdk.cs" />
+    <Compile Include="client\v1\OrderSdk.cs" />
+    <Compile Include="client\v1\ProductSdk.cs" />
+    <Compile Include="client\v2\BaseSdk.cs" />
+    <Compile Include="client\v2\ProductSdk.cs" />
+    <Compile Include="entity\v1\order\MessageLog.cs" />
+    <Compile Include="entity\v1\order\Purchase.cs" />
+    <Compile Include="entity\v1\order\PurchaseDetail.cs" />
+    <Compile Include="entity\v1\order\PurchaseDetailEnd.cs" />
+    <Compile Include="entity\v1\order\PurchaseReply.cs" />
+    <Compile Include="entity\v1\order\SaleDown.cs" />
+    <Compile Include="entity\v1\order\SaleDownDetail.cs" />
+    <Compile Include="entity\v1\order\SaleDownDetailEnd.cs" />
+    <Compile Include="entity\v1\order\SaleReply.cs" />
+    <Compile Include="entity\v2\CreateOrUpdateProduct.cs" />
+    <Compile Include="entity\v2\Product.cs" />
+    <Compile Include="entity\v2\req\CreateOrUpdateProductReq.cs" />
+    <Compile Include="entity\v2\req\GetProductReq.cs" />
+    <Compile Include="entity\v2\RespHeader.cs" />
+    <Compile Include="entity\v2\resp\CreateOrUpdateProductResp.cs" />
+    <Compile Include="entity\v2\resp\GetProductResp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="entity\product\Product.cs" />
+    <Compile Include="entity\v1\product\Product.cs" />
     <Compile Include="utils\HexUtil.cs" />
     <Compile Include="utils\HmacUtil.cs" />
     <Compile Include="utils\HttpUtil.cs" />
     <Compile Include="utils\JsonUtil.cs" />
+    <Compile Include="utils\OpenApiSignUtil.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

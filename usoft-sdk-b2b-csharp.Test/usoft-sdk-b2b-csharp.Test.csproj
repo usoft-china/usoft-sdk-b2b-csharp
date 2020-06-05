@@ -49,9 +49,10 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="OrderSdkTest.cs" />
-    <Compile Include="ProductSdkTest.cs" />
+    <Compile Include="v1\OrderSdkTest.cs" />
+    <Compile Include="v1\ProductSdkTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="v2\ProductSdkTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
