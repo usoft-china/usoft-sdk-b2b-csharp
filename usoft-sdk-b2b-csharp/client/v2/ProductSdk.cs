@@ -21,7 +21,7 @@ namespace com.usoft.sdk.b2b.client.v2 {
         /// <param name="req"></param>
         /// <returns></returns>
         public CreateOrUpdateProductResp CreateOrUpdateProduct(CreateOrUpdateProductReq req) {
-            string url = baseUrl + "/uas/product/createorupdate";
+            string url = baseUrl + "/open/product/createorupdate";
             string paramJson = GenSignToJson(req);
             string respJson = HttpUtil.DoPost(url, paramJson, timeout);
             CreateOrUpdateProductResp resp = JsonUtil.ToObject<CreateOrUpdateProductResp>(respJson);
@@ -34,10 +34,38 @@ namespace com.usoft.sdk.b2b.client.v2 {
         /// <param name="req"></param>
         /// <returns></returns>
         public GetProductResp GetProduct(GetProductReq req) {
-            string url = baseUrl + "/uas/product/get";
+            string url = baseUrl + "/open/product/get";
             Dictionary<string, string> dic = GenSignToMap(req);
             string respJson = HttpUtil.DoGet(url, dic, timeout);
             GetProductResp resp = JsonUtil.ToObject<GetProductResp>(respJson);
+            return resp;
+        }
+
+        /// <summary>
+        /// 批量新增或修改产品
+        /// </summary>
+        /// <param name="req"></param>
+        /// <returns></returns>
+        public BatchCreateOrUpdateProductResp batchCreateOrUpdateProduct(BatchCreateOrUpdateProductReq req)
+        {
+            string url = baseUrl + "/open/product/createorupdate/batch";
+            string paramJson = GenSignToJson(req);
+            string respJson = HttpUtil.DoPost(url, paramJson, timeout);
+            BatchCreateOrUpdateProductResp resp = JsonUtil.ToObject<BatchCreateOrUpdateProductResp>(respJson);
+            return resp;
+        }
+
+        /// <summary>
+        /// 分页查询产品
+        /// </summary>
+        /// <param name="req"></param>
+        /// <returns></returns>
+        public PagingProductResp pagingProduct(PagingProductReq req)
+        {
+            string url = baseUrl + "/open/product/paging";
+            Dictionary<string, string> dic = GenSignToMap(req);
+            string respJson = HttpUtil.DoGet(url, dic, timeout);
+            PagingProductResp resp = JsonUtil.ToObject<PagingProductResp>(respJson);
             return resp;
         }
     }
