@@ -64,6 +64,7 @@
     <Compile Include="entity\v1\order\SaleDownDetailEnd.cs" />
     <Compile Include="entity\v1\order\SaleReply.cs" />
     <Compile Include="entity\v2\AcceptOrderReceiveProduct.cs" />
+    <Compile Include="entity\v2\AttachFile.cs" />
     <Compile Include="entity\v2\ConfirmSellerReconcileProduct.cs" />
     <Compile Include="entity\v2\CreateOrderChgProduct.cs" />
     <Compile Include="entity\v2\CreateOrUpdateProduct.cs" />
@@ -106,6 +107,7 @@
     <Compile Include="entity\v2\ReconcileProduct.cs" />
     <Compile Include="entity\v2\RemindOrderProduct.cs" />
     <Compile Include="entity\v2\ReplyOrderProductContent.cs" />
+    <Compile Include="entity\v2\ReqHeader.cs" />
     <Compile Include="entity\v2\req\AcceptOrderReceiveReq.cs" />
     <Compile Include="entity\v2\req\BatchCreateOrUpdateProductReq.cs" />
     <Compile Include="entity\v2\req\BatchDeleteInvoiceReq.cs" />

@@ -39,6 +39,6 @@ namespace com.usoft.sdk.b2b.entity.v2.req
 		/// <summary>
 		/// 是否需要被删除的数据 true：需要被删除数据
 		/// <summary>
-		public bool isNeedDeleted { get; set; }
+		public bool needDeleted { get; set; }
 	}
 }

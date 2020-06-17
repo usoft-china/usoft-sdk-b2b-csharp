@@ -13,8 +13,8 @@ using System.Threading.Tasks;
 namespace usoft_sdk_b2b_csharp.Test.v2 {
     [TestClass]
     public class ProductSdkTest {
-        //private readonly ProductSdk productSdk = new ProductSdk("https://b2btraderest.uuzcc.cn", "10050624", "c49f7be6a861461ab951e55030055a5c");
-        private readonly ProductSdk productSdk = new ProductSdk("http://127.0.0.1:27320", "10050624", "c49f7be6a861461ab951e55030055a5c");
+        private readonly ProductSdk productSdk = new ProductSdk("https://b2btraderest.uuzcc.cn", "10050624", "c49f7be6a861461ab951e55030055a5c");
+        //private readonly ProductSdk productSdk = new ProductSdk("http://127.0.0.1:27320", "10050624", "c49f7be6a861461ab951e55030055a5c");
         
         [TestMethod]
         public void CreateOrUpdateProduct() {
@@ -41,6 +41,38 @@ namespace usoft_sdk_b2b_csharp.Test.v2 {
             GetProductReq req = new GetProductReq();
             req.code = "PD200526046405638900";
             GetProductResp resp = productSdk.GetProduct(req);
+            Console.WriteLine(JsonUtil.ToJSON(resp));
+        }
+
+        [TestMethod]
+        public void pagingProduct()
+        {
+            PagingProductReq req = new PagingProductReq();
+            req.pageSize = 1;
+            req.pageNumber = 10;
+            PagingProductResp resp = productSdk.pagingProduct(req);
+            Console.WriteLine(JsonUtil.ToJSON(resp));
+        }
+
+        [TestMethod]
+        public void batchCreateOrUpdateProduct()
+        {
+            BatchCreateOrUpdateProductReq req = new BatchCreateOrUpdateProductReq();
+            CreateOrUpdateProduct product = new CreateOrUpdateProduct();
+            req.product = new List<CreateOrUpdateProduct>();
+            product.code = "PD200526046405638900";
+            product.materialCode = "mc2";
+            product.model = "model2";
+            product.brand = "brand2";
+            product.name = "name2";
+            product.spec = "spec2";
+            product.unit = "KPCS2";
+            product.mpq = 1;
+            product.moq = 1;
+            product.deliveryTime = 5;
+            req.product.Add(product);
+            req.uu = 1000027480;
+            BatchCreateOrUpdateProductResp resp = productSdk.batchCreateOrUpdateProduct(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
     }

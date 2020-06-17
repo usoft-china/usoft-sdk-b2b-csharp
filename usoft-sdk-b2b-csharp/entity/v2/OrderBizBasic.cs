@@ -44,5 +44,9 @@ namespace com.usoft.sdk.b2b.entity.v2
 		/// 操作时间
 		/// <summary>
 		public string operateTime { get; set; }
+		/// <summary>
+		/// 是否删除
+		/// <summary>
+		public bool deleted { get; set; }
 	}
 }
