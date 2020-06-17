@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace com.usoft.sdk.b2b.client.v2
 {
-    class InvoiceSdk : BaseSdk
+    public class InvoiceSdk : BaseSdk
     {
         public InvoiceSdk(string baseUrl, string secretId, string secretKey) : base(baseUrl, secretId, secretKey) {
         }

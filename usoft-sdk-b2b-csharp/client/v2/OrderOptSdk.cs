@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace com.usoft.sdk.b2b.client.v2
 {
-    class OrderOptSdk : BaseSdk
+    public class OrderOptSdk : BaseSdk
     {
         public OrderOptSdk(string baseUrl, string secretId, string secretKey) : base(baseUrl, secretId, secretKey)
         {

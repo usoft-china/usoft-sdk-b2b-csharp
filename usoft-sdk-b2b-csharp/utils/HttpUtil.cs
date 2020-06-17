@@ -56,6 +56,7 @@ namespace com.usoft.sdk.b2b.utils {
             if (url == null || url.Length <= 0) {
                 throw new Exception("url不能为空");
             }
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
             httpClient.Timeout = TimeSpan.FromMilliseconds(timeout);
             HttpResponseMessage response = await httpClient.GetAsync(url);
             response.EnsureSuccessStatusCode();

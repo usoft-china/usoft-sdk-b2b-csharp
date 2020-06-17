@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace com.usoft.sdk.b2b.client.v2
 {
-    class ReconcileSdk : BaseSdk
+    public class ReconcileSdk : BaseSdk
     {
         public ReconcileSdk(string baseUrl, string secretId, string secretKey) : base(baseUrl, secretId, secretKey) {
         }
@@ -22,7 +22,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public PagingBuyerReconcileResp GetProduct(PagingBuyerReconcileReq req)
+        public PagingBuyerReconcileResp pagingBuyerReconcile(PagingBuyerReconcileReq req)
         {
             string url = baseUrl + "/open/buyer/reconcile/paging";
             Dictionary<string, string> dic = GenSignToMap(req);
