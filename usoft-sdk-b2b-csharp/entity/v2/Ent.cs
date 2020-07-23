@@ -15,7 +15,7 @@ namespace com.usoft.sdk.b2b.entity.v2
 		/// <summary>
 		/// 员工数量
 		/// <summary>
-		public int staffQuantity { get; set; }
+		public string staffQuantity { get; set; }
 		/// <summary>
 		/// 企业电话
 		/// <summary>

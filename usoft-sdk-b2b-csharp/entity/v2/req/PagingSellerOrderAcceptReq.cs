@@ -41,7 +41,7 @@ namespace com.usoft.sdk.b2b.entity.v2.req
 		/// <summary>
 		public long updateTime { get; set; }
 		/// <summary>
-		/// 订单类别(10.采购订单 20.委外订单)
+		/// 订单类别(10.采购订单 20.委外订单 30.不良品)
 		/// <summary>
 		public int category { get; set; }
 	}

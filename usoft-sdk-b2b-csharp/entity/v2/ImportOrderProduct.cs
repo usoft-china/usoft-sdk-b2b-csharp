@@ -76,5 +76,49 @@ namespace com.usoft.sdk.b2b.entity.v2
 		/// 开票型号
 		/// <summary>
 		public string invoiceModel { get; set; }
+		/// <summary>
+		/// 附件列表
+		/// <summary>
+		public List<AttachFile> attachFile { get; set; }
+		/// <summary>
+		/// 送货工厂
+		/// <summary>
+		public string factory { get; set; }
+		/// <summary>
+		/// 备品数量
+		/// <summary>
+		public int quantitySpare { get; set; }
+		/// <summary>
+		/// 替代料号
+		/// <summary>
+		public string replaceMaterialCode { get; set; }
+		/// <summary>
+		/// 替代料名称
+		/// <summary>
+		public string replaceMaterialName { get; set; }
+		/// <summary>
+		/// 替代料规格
+		/// <summary>
+		public string replaceMaterialSpec { get; set; }
+		/// <summary>
+		/// 旧料编号
+		/// <summary>
+		public string oldMaterialCode { get; set; }
+		/// <summary>
+		/// 旧料名称
+		/// <summary>
+		public string oldMaterialName { get; set; }
+		/// <summary>
+		/// 旧料规格
+		/// <summary>
+		public string oldMaterialSpec { get; set; }
+		/// <summary>
+		/// 物料承认状态
+		/// <summary>
+		public string materialAdmitStatus { get; set; }
+		/// <summary>
+		/// 顶层物料编码
+		/// <summary>
+		public string topMaterialCode { get; set; }
 	}
 }

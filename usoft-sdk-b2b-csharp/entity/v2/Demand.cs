@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace com.usoft.sdk.b2b.entity.v2
 {
-	public class OrderBizBasic
+	public class Demand
 	{
 		/// <summary>
 		/// 编号
@@ -17,36 +17,40 @@ namespace com.usoft.sdk.b2b.entity.v2
 		/// <summary>
 		public string bizCode { get; set; }
 		/// <summary>
-		/// 卖家enuu
-		/// <summary>
-		public int sellerEnuu { get; set; }
-		/// <summary>
 		/// 买家enuu
 		/// <summary>
 		public int buyerEnuu { get; set; }
 		/// <summary>
-		/// 订单类别(10.采购订单 20.委外订单 30.不良品)
+		/// 询价人enuu
+		/// <summary>
+		public int demandUu { get; set; }
+		/// <summary>
+		/// 订单类别(10.指定供应商 20.公共询价)
 		/// <summary>
 		public int category { get; set; }
-		/// <summary>
-		/// 付款方式
-		/// <summary>
-		public string paymentMethod { get; set; }
 		/// <summary>
 		/// 币别(人民币.RMB,美元.USD,港元.HKD,英镑.GBP,欧元.EUR,日元.JPY)
 		/// <summary>
 		public string currency { get; set; }
 		/// <summary>
-		/// 操作人uu
+		/// 报价截止日期（yyyy-MM-dd）
 		/// <summary>
-		public int operateUu { get; set; }
+		public string offerDeadline { get; set; }
 		/// <summary>
-		/// 操作时间
+		/// 询价时间
 		/// <summary>
-		public string operateTime { get; set; }
+		public string demandTime { get; set; }
 		/// <summary>
-		/// 是否删除
+		/// 多附件编号列表
 		/// <summary>
-		public bool deleted { get; set; }
+		public List<string> attachFC { get; set; }
+		/// <summary>
+		/// 来源ID
+		/// <summary>
+		public string sourceId { get; set; }
+		/// <summary>
+		/// 附件列表
+		/// <summary>
+		public List<AttachFile> attachFile { get; set; }
 	}
 }
