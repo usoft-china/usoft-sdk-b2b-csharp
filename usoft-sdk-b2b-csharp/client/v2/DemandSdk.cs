@@ -24,7 +24,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public CreateDemandResp createDemand(CreateDemandReq req)
+        public CreateDemandResp CreateDemand(CreateDemandReq req)
         {
             string url = baseUrl + "/open/demand/create";
             string paramJson = GenSignToJson(req);
@@ -38,7 +38,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public PagingBuyerDemandResp pagingBuyerDemand(PagingBuyerDemandReq req)
+        public PagingBuyerDemandResp PagingBuyerDemand(PagingBuyerDemandReq req)
         {
             string url = baseUrl + "/open/buyer/demand/paging";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -52,7 +52,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public GetBuyerDemandDetailResp getBuyerDemandDetail(GetBuyerDemandDetailReq req)
+        public GetBuyerDemandDetailResp GetBuyerDemandDetail(GetBuyerDemandDetailReq req)
         {
             string url = baseUrl + "/open/buyer/demand/detail/get";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -66,7 +66,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public ReplyDemandProductOfferResp replyDemandProductOffer(ReplyDemandProductOfferReq req)
+        public ReplyDemandProductOfferResp ReplyDemandProductOffer(ReplyDemandProductOfferReq req)
         {
             string url = baseUrl + "/open/demand/product/offer/reply";
             string paramJson = GenSignToJson(req);
@@ -80,7 +80,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public GetBuyerDemandListResp getBuyerDemandList(GetBuyerDemandListReq req)
+        public GetBuyerDemandListResp GetBuyerDemandList(GetBuyerDemandListReq req)
         {
             string url = baseUrl + "/open/buyer/demand/list/get";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -94,7 +94,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public PagingSellerDemandResp pagingSellerDemand(PagingSellerDemandReq req)
+        public PagingSellerDemandResp PagingSellerDemand(PagingSellerDemandReq req)
         {
             string url = baseUrl + "/open/seller/demand/paging";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -108,7 +108,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public GetSellerDemandDetailResp getSellerDemandDetail(GetSellerDemandDetailReq req)
+        public GetSellerDemandDetailResp GetSellerDemandDetail(GetSellerDemandDetailReq req)
         {
             string url = baseUrl + "/open/seller/demand/detail/get";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -122,7 +122,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public OfferDemandProductResp offerDemandProduct(OfferDemandProductReq req)
+        public OfferDemandProductResp OfferDemandProduct(OfferDemandProductReq req)
         {
             string url = baseUrl + "/open/demand/product/offer";
             string paramJson = GenSignToJson(req);
@@ -136,7 +136,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public BatchInvalidDemandProductResp batchInvalidDemandProduct(BatchInvalidDemandProductReq req)
+        public BatchInvalidDemandProductResp BatchInvalidDemandProduct(BatchInvalidDemandProductReq req)
         {
             string url = baseUrl + "/open/demand/product/invalid/batch";
             string paramJson = GenSignToJson(req);

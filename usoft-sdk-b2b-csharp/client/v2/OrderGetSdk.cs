@@ -52,7 +52,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public PagingBuyerOrderChgResp pagingBuyerOrderChg(PagingBuyerOrderChgReq req)
+        public PagingBuyerOrderChgResp PagingBuyerOrderChg(PagingBuyerOrderChgReq req)
         {
             string url = baseUrl + "/open/buyer/order/chg/paging";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -66,7 +66,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public GetBuyerOrderChgDetailResp getBuyerOrderChgDetail(GetBuyerOrderChgDetailReq req)
+        public GetBuyerOrderChgDetailResp GetBuyerOrderChgDetail(GetBuyerOrderChgDetailReq req)
         {
             string url = baseUrl + "/open/buyer/order/chg/detail/get";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -80,7 +80,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public PagingBuyerOrderProductReplyResp pagingBuyerOrderProductReply(PagingBuyerOrderProductReplyReq req)
+        public PagingBuyerOrderProductReplyResp PagingBuyerOrderProductReply(PagingBuyerOrderProductReplyReq req)
         {
             string url = baseUrl + "/open/buyer/order/product/reply/paging";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -94,7 +94,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public PagingBuyerOrderRemindResp pagingBuyerOrderRemind(PagingBuyerOrderRemindReq req)
+        public PagingBuyerOrderRemindResp PagingBuyerOrderRemind(PagingBuyerOrderRemindReq req)
         {
             string url = baseUrl + "/open/buyer/order/remind/paging";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -108,7 +108,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public PagingBuyerOrderDeliveryResp pagingBuyerOrderDelivery(PagingBuyerOrderDeliveryReq req)
+        public PagingBuyerOrderDeliveryResp PagingBuyerOrderDelivery(PagingBuyerOrderDeliveryReq req)
         {
             string url = baseUrl + "/open/buyer/order/delivery/paging";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -122,7 +122,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public PagingBuyerOrderReceiveResp pagingBuyerOrderReceive(PagingBuyerOrderReceiveReq req)
+        public PagingBuyerOrderReceiveResp PagingBuyerOrderReceive(PagingBuyerOrderReceiveReq req)
         {
             string url = baseUrl + "/open/buyer/order/receive/paging";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -136,7 +136,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public PagingBuyerOrderAcceptResp pagingBuyerOrderAccept(PagingBuyerOrderAcceptReq req)
+        public PagingBuyerOrderAcceptResp PagingBuyerOrderAccept(PagingBuyerOrderAcceptReq req)
         {
             string url = baseUrl + "/open/buyer/order/accept/paging";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -150,7 +150,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public PagingBuyerOrderReturnResp pagingBuyerOrderReturn(PagingBuyerOrderReturnReq req)
+        public PagingBuyerOrderReturnResp PagingBuyerOrderReturn(PagingBuyerOrderReturnReq req)
         {
             string url = baseUrl + "/open/buyer/order/return/paging";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -164,7 +164,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public PagingSellerOrderResp pagingSellerOrder(PagingSellerOrderReq req)
+        public PagingSellerOrderResp PagingSellerOrder(PagingSellerOrderReq req)
         {
             string url = baseUrl + "/open/seller/order/paging";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -178,7 +178,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public GetSellerOrderDetailResp getSellerOrderDetail(GetSellerOrderDetailReq req)
+        public GetSellerOrderDetailResp GetSellerOrderDetail(GetSellerOrderDetailReq req)
         {
             string url = baseUrl + "/open/seller/order/paging";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -192,7 +192,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public PagingSellerOrderChgResp pagingSellerOrderChg(PagingSellerOrderChgReq req)
+        public PagingSellerOrderChgResp PagingSellerOrderChg(PagingSellerOrderChgReq req)
         {
             string url = baseUrl + "/open/seller/order/chg/paging";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -206,7 +206,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public GetSellerOrderChgDetailResp getSellerOrderChgDetail(GetSellerOrderChgDetailReq req)
+        public GetSellerOrderChgDetailResp GetSellerOrderChgDetail(GetSellerOrderChgDetailReq req)
         {
             string url = baseUrl + "/open/seller/order/chg/detail/get";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -220,7 +220,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public PagingSellerOrderProductReplyResp pagingSellerOrderProductReply(PagingSellerOrderProductReplyReq req)
+        public PagingSellerOrderProductReplyResp PagingSellerOrderProductReply(PagingSellerOrderProductReplyReq req)
         {
             string url = baseUrl + "/open/seller/order/product/reply/paging";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -234,7 +234,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public PagingSellerOrderRemindResp pagingSellerOrderRemind(PagingSellerOrderRemindReq req)
+        public PagingSellerOrderRemindResp PagingSellerOrderRemind(PagingSellerOrderRemindReq req)
         {
             string url = baseUrl + "/open/seller/order/remind/paging";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -248,7 +248,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public PagingSellerOrderDeliveryResp pagingSellerOrderDelivery(PagingSellerOrderDeliveryReq req)
+        public PagingSellerOrderDeliveryResp PagingSellerOrderDelivery(PagingSellerOrderDeliveryReq req)
         {
             string url = baseUrl + "/open/seller/order/delivery/paging";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -262,7 +262,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public PagingSellerOrderReceiveResp pagingSellerOrderReceive(PagingSellerOrderReceiveReq req)
+        public PagingSellerOrderReceiveResp PagingSellerOrderReceive(PagingSellerOrderReceiveReq req)
         {
             string url = baseUrl + "/open/seller/order/receive/paging";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -276,7 +276,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public PagingSellerOrderAcceptResp pagingSellerOrderAccept(PagingSellerOrderAcceptReq req)
+        public PagingSellerOrderAcceptResp PagingSellerOrderAccept(PagingSellerOrderAcceptReq req)
         {
             string url = baseUrl + "/open/seller/order/accept/paging";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -290,7 +290,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public PagingSellerOrderReturnResp pagingSellerOrderReturn(PagingSellerOrderReturnReq req)
+        public PagingSellerOrderReturnResp PagingSellerOrderReturn(PagingSellerOrderReturnReq req)
         {
             string url = baseUrl + "/open/seller/order/return/paging";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -304,7 +304,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public BatchGetOrderDetailResp batchGetOrderDetail(BatchGetOrderDetailReq req)
+        public BatchGetOrderDetailResp BatchGetOrderDetail(BatchGetOrderDetailReq req)
         {
             string url = baseUrl + "/open/order/detail/batch";
             string paramJson = GenSignToJson(req);
@@ -318,7 +318,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public BatchGetOrderProductResp batchGetOrderProduct(BatchGetOrderProductReq req)
+        public BatchGetOrderProductResp BatchGetOrderProduct(BatchGetOrderProductReq req)
         {
             string url = baseUrl + "/open/order/product/get/batch";
             string paramJson = GenSignToJson(req);
@@ -332,7 +332,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public GetOrderRemindDetailResp getOrderRemindDetail(GetOrderRemindDetailReq req)
+        public GetOrderRemindDetailResp GetOrderRemindDetail(GetOrderRemindDetailReq req)
         {
             string url = baseUrl + "/open/order/remind/detail/get";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -346,7 +346,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public GetOrderDeliveryDetailResp getOrderDeliveryDetail(GetOrderDeliveryDetailReq req)
+        public GetOrderDeliveryDetailResp GetOrderDeliveryDetail(GetOrderDeliveryDetailReq req)
         {
             string url = baseUrl + "/open/order/delivery/detail/get";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -360,7 +360,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public GetOrderReceiveDetailResp getOrderReceiveDetail(GetOrderReceiveDetailReq req)
+        public GetOrderReceiveDetailResp GetOrderReceiveDetail(GetOrderReceiveDetailReq req)
         {
             string url = baseUrl + "/open/order/receive/detail/get";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -374,7 +374,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public GetOrderAcceptDetailResp getOrderAcceptDetail(GetOrderAcceptDetailReq req)
+        public GetOrderAcceptDetailResp GetOrderAcceptDetail(GetOrderAcceptDetailReq req)
         {
             string url = baseUrl + "/open/order/accept/detail/get";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -388,7 +388,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public GetOrderReturnDetailResp getOrderReturnDetail(GetOrderReturnDetailReq req)
+        public GetOrderReturnDetailResp GetOrderReturnDetail(GetOrderReturnDetailReq req)
         {
             string url = baseUrl + "/open/order/return/detail/get";
             Dictionary<string, string> dic = GenSignToMap(req);

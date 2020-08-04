@@ -24,7 +24,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public CreateOrderResp createOrder(CreateOrderReq req)
+        public CreateOrderResp CreateOrder(CreateOrderReq req)
         {
             string url = baseUrl + "/open/order/create";
             string paramJson = GenSignToJson(req);
@@ -38,7 +38,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public CreateOrderChgResp createOrderChg(CreateOrderChgReq req)
+        public CreateOrderChgResp CreateOrderChg(CreateOrderChgReq req)
         {
             string url = baseUrl + "/open/order/chg/create";
             string paramJson = GenSignToJson(req);
@@ -52,7 +52,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public CreateOrderRemindResp createOrderRemind(CreateOrderRemindReq req)
+        public CreateOrderRemindResp CreateOrderRemind(CreateOrderRemindReq req)
         {
             string url = baseUrl + "/open/order/remind/create";
             string paramJson = GenSignToJson(req);
@@ -66,7 +66,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public ReceiveOrderDeliveryResp receiveOrderDelivery(ReceiveOrderDeliveryReq req)
+        public ReceiveOrderDeliveryResp ReceiveOrderDelivery(ReceiveOrderDeliveryReq req)
         {
             string url = baseUrl + "/open/order/delivery/receive";
             string paramJson = GenSignToJson(req);
@@ -80,7 +80,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public AcceptOrderReceiveResp acceptOrderReceive(AcceptOrderReceiveReq req)
+        public AcceptOrderReceiveResp AcceptOrderReceive(AcceptOrderReceiveReq req)
         {
             string url = baseUrl + "/open/order/receive/accept";
             string paramJson = GenSignToJson(req);
@@ -94,7 +94,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public ReturnOrderAcceptResp returnOrderAccept(ReturnOrderAcceptReq req)
+        public ReturnOrderAcceptResp ReturnOrderAccept(ReturnOrderAcceptReq req)
         {
             string url = baseUrl + "/open/order/accept/return";
             string paramJson = GenSignToJson(req);
@@ -108,7 +108,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public CloseOrderResp closeOrder(CloseOrderReq req)
+        public CloseOrderResp CloseOrder(CloseOrderReq req)
         {
             string url = baseUrl + "/open/order/close";
             string paramJson = GenSignToJson(req);
@@ -122,7 +122,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public CloseOrderRemindResp closeOrderRemind(CloseOrderRemindReq req)
+        public CloseOrderRemindResp CloseOrderRemind(CloseOrderRemindReq req)
         {
             string url = baseUrl + "/open/order/remind/close";
             string paramJson = GenSignToJson(req);
@@ -136,7 +136,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public ReplyOrderChgResp replyOrderChg(ReplyOrderChgReq req)
+        public ReplyOrderChgResp ReplyOrderChg(ReplyOrderChgReq req)
         {
             string url = baseUrl + "/open/order/chg/reply";
             string paramJson = GenSignToJson(req);
@@ -150,7 +150,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public DeliverOrderRemindResp deliverOrderRemind(DeliverOrderRemindReq req)
+        public DeliverOrderRemindResp DeliverOrderRemind(DeliverOrderRemindReq req)
         {
             string url = baseUrl + "/open/order/remind/deliver";
             string paramJson = GenSignToJson(req);
@@ -164,7 +164,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public ReplyOrderProductResp replyOrderProduct(ReplyOrderProductReq req)
+        public ReplyOrderProductResp ReplyOrderProduct(ReplyOrderProductReq req)
         {
             string url = baseUrl + "/open/order/product/reply";
             string paramJson = GenSignToJson(req);
@@ -178,7 +178,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public BatchReplyOrderProductResp batchReplyOrderProduct(BatchReplyOrderProductReq req)
+        public BatchReplyOrderProductResp BatchReplyOrderProduct(BatchReplyOrderProductReq req)
         {
             string url = baseUrl + "/open/order/product/reply/batch";
             string paramJson = GenSignToJson(req);
@@ -192,7 +192,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public BatchUpdateAcceptProductResp batchUpdateAcceptProduct(BatchUpdateAcceptProductReq req)
+        public BatchUpdateAcceptProductResp BatchUpdateAcceptProduct(BatchUpdateAcceptProductReq req)
         {
             string url = baseUrl + "/open/order/accept/product/update/batch";
             string paramJson = GenSignToJson(req);
@@ -206,7 +206,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public BatchUpdateReturnProductResp batchUpdateReturnProduct(BatchUpdateReturnProductReq req)
+        public BatchUpdateReturnProductResp BatchUpdateReturnProduct(BatchUpdateReturnProductReq req)
         {
             string url = baseUrl + "/open/order/return/product/update/batch";
             string paramJson = GenSignToJson(req);
@@ -220,7 +220,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public BatchDeleteOrderAcceptResp batchDeleteOrderAccept(BatchDeleteOrderAcceptReq req)
+        public BatchDeleteOrderAcceptResp BatchDeleteOrderAccept(BatchDeleteOrderAcceptReq req)
         {
             string url = baseUrl + "/open/order/accept/delete/batch";
             string paramJson = GenSignToJson(req);
@@ -234,7 +234,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public BatchDeleteOrderReturnResp batchDeleteOrderReturn(BatchDeleteOrderReturnReq req)
+        public BatchDeleteOrderReturnResp BatchDeleteOrderReturn(BatchDeleteOrderReturnReq req)
         {
             string url = baseUrl + "/open/order/return/delete/batch";
             string paramJson = GenSignToJson(req);

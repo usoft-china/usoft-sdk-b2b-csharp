@@ -22,7 +22,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public PagingBuyerInvoiceResp pagingBuyerInvoice(PagingBuyerInvoiceReq req)
+        public PagingBuyerInvoiceResp PagingBuyerInvoice(PagingBuyerInvoiceReq req)
         {
             string url = baseUrl + "/open/buyer/invoice/paging";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -36,7 +36,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public GetBuyerInvoiceDetailResp getBuyerInvoiceDetail(GetBuyerInvoiceDetailReq req)
+        public GetBuyerInvoiceDetailResp GetBuyerInvoiceDetail(GetBuyerInvoiceDetailReq req)
         {
             string url = baseUrl + "/open/buyer/invoice/detail/get";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -50,7 +50,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public OpenInvoiceResp openInvoice(OpenInvoiceReq req)
+        public OpenInvoiceResp OpenInvoice(OpenInvoiceReq req)
         {
             string url = baseUrl + "/open/invoice/open";
             string paramJson = GenSignToJson(req);
@@ -64,7 +64,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public PagingSellerInvoiceResp pagingSellerInvoice(PagingSellerInvoiceReq req)
+        public PagingSellerInvoiceResp PagingSellerInvoice(PagingSellerInvoiceReq req)
         {
             string url = baseUrl + "/open/seller/invoice/paging";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -78,7 +78,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public GetSellerInvoiceDetailResp getSellerInvoiceDetail(GetSellerInvoiceDetailReq req)
+        public GetSellerInvoiceDetailResp GetSellerInvoiceDetail(GetSellerInvoiceDetailReq req)
         {
             string url = baseUrl + "/open/seller/invoice/detail/get";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -92,7 +92,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public BatchDeleteInvoiceResp batchDeleteInvoice(BatchDeleteInvoiceReq req)
+        public BatchDeleteInvoiceResp BatchDeleteInvoice(BatchDeleteInvoiceReq req)
         {
             string url = baseUrl + "/open/invoice/delete/batch";
             string paramJson = GenSignToJson(req);

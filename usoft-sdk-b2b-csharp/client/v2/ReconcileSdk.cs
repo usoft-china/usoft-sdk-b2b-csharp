@@ -22,7 +22,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public PagingBuyerReconcileResp pagingBuyerReconcile(PagingBuyerReconcileReq req)
+        public PagingBuyerReconcileResp PagingBuyerReconcile(PagingBuyerReconcileReq req)
         {
             string url = baseUrl + "/open/buyer/reconcile/paging";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -36,7 +36,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public GetBuyerReconcileDetailResp getBuyerReconcileDetail(GetBuyerReconcileDetailReq req)
+        public GetBuyerReconcileDetailResp GetBuyerReconcileDetail(GetBuyerReconcileDetailReq req)
         {
             string url = baseUrl + "/open/buyer/reconcile/detail/get";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -50,7 +50,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public ConfirmBuyerReconcileResp confirmBuyerReconcile(ConfirmBuyerReconcileReq req)
+        public ConfirmBuyerReconcileResp ConfirmBuyerReconcile(ConfirmBuyerReconcileReq req)
         {
             string url = baseUrl + "/open/buyer/reconcile/confirm";
             string paramJson = GenSignToJson(req);
@@ -64,7 +64,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public PagingSellerReconcileResp pagingSellerReconcile(PagingSellerReconcileReq req)
+        public PagingSellerReconcileResp PagingSellerReconcile(PagingSellerReconcileReq req)
         {
             string url = baseUrl + "/open/seller/reconcile/paging";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -78,7 +78,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public GetSellerReconcileDetailResp getSellerReconcileDetail(GetSellerReconcileDetailReq req)
+        public GetSellerReconcileDetailResp GetSellerReconcileDetail(GetSellerReconcileDetailReq req)
         {
             string url = baseUrl + "/open/seller/reconcile/detail/get";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -92,7 +92,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public ConfirmSellerReconcileResp confirmSellerReconcile(ConfirmSellerReconcileReq req)
+        public ConfirmSellerReconcileResp ConfirmSellerReconcile(ConfirmSellerReconcileReq req)
         {
             string url = baseUrl + "/open/seller/reconcile/confirm";
             string paramJson = GenSignToJson(req);

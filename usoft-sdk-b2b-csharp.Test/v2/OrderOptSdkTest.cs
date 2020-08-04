@@ -32,7 +32,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             DeliveryAddr deliveryAddr = new DeliveryAddr();
             deliveryAddr.code = "DA200226268678882100";
             req.deliveryAddr = deliveryAddr;
-            CreateOrderResp resp = orderOptSdk.createOrder(req);
+            CreateOrderResp resp = orderOptSdk.CreateOrder(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -62,7 +62,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             req.orderChgProduct = new List<CreateOrderChgProduct>();
             req.orderChgProduct.Add(op1);
             req.uu = 200040196;
-            CreateOrderChgResp resp = orderOptSdk.createOrderChg(req);
+            CreateOrderChgResp resp = orderOptSdk.CreateOrderChg(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -77,7 +77,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             req.remindOP = new List<RemindOrderProduct>();
             req.remindOP.Add(rop);
             req.uu = 200040196;
-            CreateOrderRemindResp resp = orderOptSdk.createOrderRemind(req);
+            CreateOrderRemindResp resp = orderOptSdk.CreateOrderRemind(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -91,7 +91,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             req.receiveODP = new List<ReceiveOrderDeliveryProduct>();
             req.receiveODP.Add(rodp);
             req.uu = 200040196;
-            ReceiveOrderDeliveryResp resp = orderOptSdk.receiveOrderDelivery(req);
+            ReceiveOrderDeliveryResp resp = orderOptSdk.ReceiveOrderDelivery(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -105,7 +105,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             req.acceptORP = new List<AcceptOrderReceiveProduct>();
             req.acceptORP.Add(acceptORP);
             req.uu = 200040196;
-            AcceptOrderReceiveResp resp = orderOptSdk.acceptOrderReceive(req);
+            AcceptOrderReceiveResp resp = orderOptSdk.AcceptOrderReceive(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -119,7 +119,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             req.returnOAP = new List<ReturnOrderAcceptProduct>();
             req.returnOAP.Add(returnOAP);
             req.uu = 200040196;
-            ReturnOrderAcceptResp resp = orderOptSdk.returnOrderAccept(req);
+            ReturnOrderAcceptResp resp = orderOptSdk.ReturnOrderAccept(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -130,7 +130,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             req.orderProductCode = new List<string>();
             req.orderProductCode.Add("");
             req.uu = 200040196;
-            CloseOrderResp resp = orderOptSdk.closeOrder(req);
+            CloseOrderResp resp = orderOptSdk.CloseOrder(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -141,7 +141,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             req.orderRemindProductCode = new List<string>();
             req.orderRemindProductCode.Add("");
             req.uu = 200040196;
-            CloseOrderRemindResp resp = orderOptSdk.closeOrderRemind(req);
+            CloseOrderRemindResp resp = orderOptSdk.CloseOrderRemind(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -152,7 +152,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             req.orderChgCode = "CO200526046475222302";
             req.replyRemark = "ReplyRemarksd";
             req.replyStatus = 10;
-            ReplyOrderChgResp resp = orderOptSdk.replyOrderChg(req);
+            ReplyOrderChgResp resp = orderOptSdk.ReplyOrderChg(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -166,7 +166,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             req.deliveryORP = new List<DeliveryOrderRemindProduct>();
             req.deliveryORP.Add(dorp);
             req.uu = 200040196;
-            DeliverOrderRemindResp resp = orderOptSdk.deliverOrderRemind(req);
+            DeliverOrderRemindResp resp = orderOptSdk.DeliverOrderRemind(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -182,7 +182,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             builder.remark = "测试";
             req.replyContent = builder;
             req.uu = 200040196;
-            ReplyOrderProductResp resp = orderOptSdk.replyOrderProduct(req);
+            ReplyOrderProductResp resp = orderOptSdk.ReplyOrderProduct(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -199,7 +199,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             req.uu = 200040196;
             req.replyContent = new List<ReplyOrderProductContent>();
             req.replyContent.Add(builder);
-            BatchReplyOrderProductResp resp = orderOptSdk.batchReplyOrderProduct(req);
+            BatchReplyOrderProductResp resp = orderOptSdk.BatchReplyOrderProduct(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -213,7 +213,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             builder.unitPrice = 20;
             req.updateReq = new List<UpdateReq>();
             req.updateReq.Add(builder);
-            BatchUpdateAcceptProductResp resp = orderOptSdk.batchUpdateAcceptProduct(req);
+            BatchUpdateAcceptProductResp resp = orderOptSdk.BatchUpdateAcceptProduct(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -227,7 +227,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             builder.unitPrice = 1;
             req.updateReq = new List<UpdateReq>();
             req.updateReq.Add(builder);
-            BatchUpdateReturnProductResp resp = orderOptSdk.batchUpdateReturnProduct(req);
+            BatchUpdateReturnProductResp resp = orderOptSdk.BatchUpdateReturnProduct(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -237,7 +237,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             BatchDeleteOrderAcceptReq req = new BatchDeleteOrderAcceptReq();
             req.code = new List<string>();
             req.code.Add("OA200616229559969107");
-            BatchDeleteOrderAcceptResp resp = orderOptSdk.batchDeleteOrderAccept(req);
+            BatchDeleteOrderAcceptResp resp = orderOptSdk.BatchDeleteOrderAccept(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -247,7 +247,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             BatchDeleteOrderReturnReq req = new BatchDeleteOrderReturnReq();
             req.code = new List<string>();
             req.code.Add("OT200616229641056523");
-            BatchDeleteOrderReturnResp resp = orderOptSdk.batchDeleteOrderReturn(req);
+            BatchDeleteOrderReturnResp resp = orderOptSdk.BatchDeleteOrderReturn(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
     }

@@ -46,7 +46,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             req.keywords = "wc";
             req.startTime = "2020-03-24";
             req.endTime = "2020-07-24";
-            PagingBuyerOrderChgResp resp = orderGetSdk.pagingBuyerOrderChg(req);
+            PagingBuyerOrderChgResp resp = orderGetSdk.PagingBuyerOrderChg(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -55,7 +55,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
         {
             GetBuyerOrderChgDetailReq req = new GetBuyerOrderChgDetailReq();
             req.code = "CO200526046475222302";
-            GetBuyerOrderChgDetailResp resp = orderGetSdk.getBuyerOrderChgDetail(req);
+            GetBuyerOrderChgDetailResp resp = orderGetSdk.GetBuyerOrderChgDetail(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -68,7 +68,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             req.keywords = "wc";
             req.startTime = "2020-03-24";
             req.endTime = "2020-07-24";
-            PagingBuyerOrderRemindResp resp = orderGetSdk.pagingBuyerOrderRemind(req);
+            PagingBuyerOrderRemindResp resp = orderGetSdk.PagingBuyerOrderRemind(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -81,7 +81,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             req.keywords = "wc";
             req.startTime = "2020-03-24";
             req.endTime = "2020-07-24";
-            PagingBuyerOrderDeliveryResp resp = orderGetSdk.pagingBuyerOrderDelivery(req);
+            PagingBuyerOrderDeliveryResp resp = orderGetSdk.PagingBuyerOrderDelivery(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -94,7 +94,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             req.keywords = "wc";
             req.startTime = "2020-03-24";
             req.endTime = "2020-07-24";
-            PagingBuyerOrderReceiveResp resp = orderGetSdk.pagingBuyerOrderReceive(req);
+            PagingBuyerOrderReceiveResp resp = orderGetSdk.PagingBuyerOrderReceive(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -107,7 +107,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             req.keywords = "wc";
             req.startTime = "2020-03-24";
             req.endTime = "2020-07-24";
-            PagingBuyerOrderAcceptResp resp = orderGetSdk.pagingBuyerOrderAccept(req);
+            PagingBuyerOrderAcceptResp resp = orderGetSdk.PagingBuyerOrderAccept(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -120,7 +120,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             req.keywords = "wc";
             req.startTime = "2020-03-24";
             req.endTime = "2020-07-24";
-            PagingBuyerOrderReturnResp resp = orderGetSdk.pagingBuyerOrderReturn(req);
+            PagingBuyerOrderReturnResp resp = orderGetSdk.PagingBuyerOrderReturn(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -135,7 +135,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             req.keywords = "wc";
             req.startTime = "2020-03-24";
             req.endTime = "2020-07-24";
-            PagingSellerOrderResp resp = orderGetSdk.pagingSellerOrder(req);
+            PagingSellerOrderResp resp = orderGetSdk.PagingSellerOrder(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -144,7 +144,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
         {
             GetSellerOrderDetailReq req = new GetSellerOrderDetailReq();
             req.orderCode = "OR200526046405671102";
-            GetSellerOrderDetailResp resp = orderGetSdk.getSellerOrderDetail(req);
+            GetSellerOrderDetailResp resp = orderGetSdk.GetSellerOrderDetail(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -157,7 +157,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             req.keywords = "wc";
             req.startTime = "2020-03-24";
             req.endTime = "2020-07-24";
-            PagingSellerOrderChgResp resp = orderGetSdk.pagingSellerOrderChg(req);
+            PagingSellerOrderChgResp resp = orderGetSdk.PagingSellerOrderChg(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -166,7 +166,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
         {
             GetSellerOrderChgDetailReq req = new GetSellerOrderChgDetailReq();
             req.code = "CO200526046475222302";
-            GetSellerOrderChgDetailResp resp = orderGetSdk.getSellerOrderChgDetail(req);
+            GetSellerOrderChgDetailResp resp = orderGetSdk.GetSellerOrderChgDetail(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -179,7 +179,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             req.keywords = "wc";
             req.startTime = "2020-03-24";
             req.endTime = "2020-07-24";
-            PagingSellerOrderRemindResp resp = orderGetSdk.pagingSellerOrderRemind(req);
+            PagingSellerOrderRemindResp resp = orderGetSdk.PagingSellerOrderRemind(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -192,7 +192,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             req.keywords = "wc";
             req.startTime = "2020-03-24";
             req.endTime = "2020-07-24";
-            PagingSellerOrderDeliveryResp resp = orderGetSdk.pagingSellerOrderDelivery(req);
+            PagingSellerOrderDeliveryResp resp = orderGetSdk.PagingSellerOrderDelivery(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -205,7 +205,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             req.keywords = "wc";
             req.startTime = "2020-03-24";
             req.endTime = "2020-07-24";
-            PagingSellerOrderReceiveResp resp = orderGetSdk.pagingSellerOrderReceive(req);
+            PagingSellerOrderReceiveResp resp = orderGetSdk.PagingSellerOrderReceive(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -218,7 +218,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             req.keywords = "wc";
             req.startTime = "2020-03-24";
             req.endTime = "2020-07-24";
-            PagingSellerOrderAcceptResp resp = orderGetSdk.pagingSellerOrderAccept(req);
+            PagingSellerOrderAcceptResp resp = orderGetSdk.PagingSellerOrderAccept(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -231,7 +231,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             req.keywords = "wc";
             req.startTime = "2020-03-24";
             req.endTime = "2020-07-24";
-            PagingSellerOrderReturnResp resp = orderGetSdk.pagingSellerOrderReturn(req);
+            PagingSellerOrderReturnResp resp = orderGetSdk.PagingSellerOrderReturn(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -242,7 +242,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             req.code = new List<string>();
             req.code.Add("OR200508892251984128");
             req.code.Add("OR200506875276648009");
-            BatchGetOrderDetailResp resp = orderGetSdk.batchGetOrderDetail(req);
+            BatchGetOrderDetailResp resp = orderGetSdk.BatchGetOrderDetail(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -253,7 +253,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             req.code = new List<string>();
             req.code.Add("OR200508892251984128");
             req.code.Add("OR200506875276648009");
-            BatchGetOrderProductResp resp = orderGetSdk.batchGetOrderProduct(req);
+            BatchGetOrderProductResp resp = orderGetSdk.BatchGetOrderProduct(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -262,7 +262,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
         {
             GetOrderRemindDetailReq req = new GetOrderRemindDetailReq();
             req.orderRemindCode = "OR200508892251984128";
-            GetOrderRemindDetailResp resp = orderGetSdk.getOrderRemindDetail(req);
+            GetOrderRemindDetailResp resp = orderGetSdk.GetOrderRemindDetail(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -271,7 +271,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
         {
             GetOrderDeliveryDetailReq req = new GetOrderDeliveryDetailReq();
             req.orderDeliveryCode = "OR200508892251984128";
-            GetOrderDeliveryDetailResp resp = orderGetSdk.getOrderDeliveryDetail(req);
+            GetOrderDeliveryDetailResp resp = orderGetSdk.GetOrderDeliveryDetail(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -280,7 +280,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
         {
             GetOrderReceiveDetailReq req = new GetOrderReceiveDetailReq();
             req.orderReceiveCode = "OR200508892251984128";
-            GetOrderReceiveDetailResp resp = orderGetSdk.getOrderReceiveDetail(req);
+            GetOrderReceiveDetailResp resp = orderGetSdk.GetOrderReceiveDetail(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -289,7 +289,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
         {
             GetOrderAcceptDetailReq req = new GetOrderAcceptDetailReq();
             req.orderAcceptCode = "OR200508892251984128";
-            GetOrderAcceptDetailResp resp = orderGetSdk.getOrderAcceptDetail(req);
+            GetOrderAcceptDetailResp resp = orderGetSdk.GetOrderAcceptDetail(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -298,7 +298,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
         {
             GetOrderReturnDetailReq req = new GetOrderReturnDetailReq();
             req.orderReturnCode = "OR200508892251984128";
-            GetOrderReturnDetailResp resp = orderGetSdk.getOrderReturnDetail(req);
+            GetOrderReturnDetailResp resp = orderGetSdk.GetOrderReturnDetail(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
     }

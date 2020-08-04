@@ -46,7 +46,7 @@ namespace com.usoft.sdk.b2b.client.v2 {
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public BatchCreateOrUpdateProductResp batchCreateOrUpdateProduct(BatchCreateOrUpdateProductReq req)
+        public BatchCreateOrUpdateProductResp BatchCreateOrUpdateProduct(BatchCreateOrUpdateProductReq req)
         {
             string url = baseUrl + "/open/product/createorupdate/batch";
             string paramJson = GenSignToJson(req);
@@ -60,7 +60,7 @@ namespace com.usoft.sdk.b2b.client.v2 {
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public PagingProductResp pagingProduct(PagingProductReq req)
+        public PagingProductResp PagingProduct(PagingProductReq req)
         {
             string url = baseUrl + "/open/product/paging";
             Dictionary<string, string> dic = GenSignToMap(req);

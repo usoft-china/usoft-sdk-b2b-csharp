@@ -24,7 +24,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             PagingBuyerReconcileReq req = new PagingBuyerReconcileReq();
             req.pageSize = 1;
             req.pageNumber = 10;
-            PagingBuyerReconcileResp resp = reconcileSdk.pagingBuyerReconcile(req);
+            PagingBuyerReconcileResp resp = reconcileSdk.PagingBuyerReconcile(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -33,7 +33,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
         {
             GetBuyerReconcileDetailReq req = new GetBuyerReconcileDetailReq();
             req.code = "TR200526047454719711";
-            GetBuyerReconcileDetailResp resp = reconcileSdk.getBuyerReconcileDetail(req);
+            GetBuyerReconcileDetailResp resp = reconcileSdk.GetBuyerReconcileDetail(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -44,7 +44,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             req.reconcileCode = "TR200617235885919601";
             req.status = 20;
             req.uu = 200040196;
-            ConfirmBuyerReconcileResp resp = reconcileSdk.confirmBuyerReconcile(req);
+            ConfirmBuyerReconcileResp resp = reconcileSdk.ConfirmBuyerReconcile(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -54,7 +54,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             PagingSellerReconcileReq req = new PagingSellerReconcileReq();
             req.pageSize = 1;
             req.pageNumber = 10;
-            PagingSellerReconcileResp resp = reconcileSdk.pagingSellerReconcile(req);
+            PagingSellerReconcileResp resp = reconcileSdk.PagingSellerReconcile(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -63,7 +63,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
         {
             GetSellerReconcileDetailReq req = new GetSellerReconcileDetailReq();
             req.code = "TR200526047454719711";
-            GetSellerReconcileDetailResp resp = reconcileSdk.getSellerReconcileDetail(req);
+            GetSellerReconcileDetailResp resp = reconcileSdk.GetSellerReconcileDetail(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -80,7 +80,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             req.uu = 200040196;
             req.reconcileProduct = new List<ConfirmSellerReconcileProduct>();
             req.reconcileProduct.Add(builder);
-            ConfirmSellerReconcileResp resp = reconcileSdk.confirmSellerReconcile(req);
+            ConfirmSellerReconcileResp resp = reconcileSdk.ConfirmSellerReconcile(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
     }

@@ -50,7 +50,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2 {
             PagingProductReq req = new PagingProductReq();
             req.pageSize = 1;
             req.pageNumber = 10;
-            PagingProductResp resp = productSdk.pagingProduct(req);
+            PagingProductResp resp = productSdk.PagingProduct(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -72,7 +72,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2 {
             product.deliveryTime = 5;
             req.product.Add(product);
             req.uu = 1000027480;
-            BatchCreateOrUpdateProductResp resp = productSdk.batchCreateOrUpdateProduct(req);
+            BatchCreateOrUpdateProductResp resp = productSdk.BatchCreateOrUpdateProduct(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
     }

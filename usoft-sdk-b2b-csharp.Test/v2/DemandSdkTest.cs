@@ -55,7 +55,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             req.bizCode = "666666";
             req.demandTime = "2020-06-19 08:08:08";
             req.uu = 200040196;
-            CreateDemandResp resp = demandSdk.createDemand(req);
+            CreateDemandResp resp = demandSdk.CreateDemand(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -65,7 +65,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             PagingBuyerDemandReq req = new PagingBuyerDemandReq();
             req.pageNumber = 10;
             req.pageSize = 1;
-            PagingBuyerDemandResp resp = demandSdk.pagingBuyerDemand(req);
+            PagingBuyerDemandResp resp = demandSdk.PagingBuyerDemand(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -74,7 +74,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
         {
             GetBuyerDemandDetailReq req = new GetBuyerDemandDetailReq();
             req.code = "DD200619255039749100";
-            GetBuyerDemandDetailResp resp = demandSdk.getBuyerDemandDetail(req);
+            GetBuyerDemandDetailResp resp = demandSdk.GetBuyerDemandDetail(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -84,7 +84,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             ReplyDemandProductOfferReq req = new ReplyDemandProductOfferReq();
             req.demandProductOfferCode = "PO200509900506414803";
             req.category = 20;
-            ReplyDemandProductOfferResp resp = demandSdk.replyDemandProductOffer(req);
+            ReplyDemandProductOfferResp resp = demandSdk.ReplyDemandProductOffer(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -93,7 +93,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
         {
             GetBuyerDemandListReq req = new GetBuyerDemandListReq();
             req.bizCode = "777777";
-            GetBuyerDemandListResp resp = demandSdk.getBuyerDemandList(req);
+            GetBuyerDemandListResp resp = demandSdk.GetBuyerDemandList(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -103,7 +103,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             PagingSellerDemandReq req = new PagingSellerDemandReq();
             req.pageNumber = 10;
             req.pageSize = 1;
-            PagingSellerDemandResp resp = demandSdk.pagingSellerDemand(req);
+            PagingSellerDemandResp resp = demandSdk.PagingSellerDemand(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -112,7 +112,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
         {
             GetSellerDemandDetailReq req = new GetSellerDemandDetailReq();
             req.code = "DD200509900416450200";
-            GetSellerDemandDetailResp resp = demandSdk.getSellerDemandDetail(req);
+            GetSellerDemandDetailResp resp = demandSdk.GetSellerDemandDetail(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -142,7 +142,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             file2.url = "https://static.uuzcc.cn/appmall/12200604123893460688.jpg";
             file2.name = "test1.jpg";
             req.attachFile = file2;
-            OfferDemandProductResp resp = demandSdk.offerDemandProduct(req);
+            OfferDemandProductResp resp = demandSdk.OfferDemandProduct(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -152,7 +152,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             BatchInvalidDemandProductReq req = new BatchInvalidDemandProductReq();
             req.code.Add("MP200619254984927037");
             req.code.Add("MP200619254984927238");
-            BatchInvalidDemandProductResp resp = demandSdk.batchInvalidDemandProduct(req);
+            BatchInvalidDemandProductResp resp = demandSdk.BatchInvalidDemandProduct(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
     }

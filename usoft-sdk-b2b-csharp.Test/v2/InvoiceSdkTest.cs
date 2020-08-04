@@ -24,7 +24,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             PagingBuyerInvoiceReq req = new PagingBuyerInvoiceReq();
             req.pageSize = 1;
             req.pageNumber = 10;
-            PagingBuyerInvoiceResp resp = invoiceSdk.pagingBuyerInvoice(req);
+            PagingBuyerInvoiceResp resp = invoiceSdk.PagingBuyerInvoice(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -34,7 +34,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
         {
             GetBuyerInvoiceDetailReq req = new GetBuyerInvoiceDetailReq();
             req.code = "TI200605135228880002";
-            GetBuyerInvoiceDetailResp resp = invoiceSdk.getBuyerInvoiceDetail(req);
+            GetBuyerInvoiceDetailResp resp = invoiceSdk.GetBuyerInvoiceDetail(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -44,7 +44,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             PagingSellerInvoiceReq req = new PagingSellerInvoiceReq();
             req.pageNumber = 10;
             req.pageSize = 1;
-            PagingSellerInvoiceResp resp = invoiceSdk.pagingSellerInvoice(req);
+            PagingSellerInvoiceResp resp = invoiceSdk.PagingSellerInvoice(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -53,7 +53,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
         {
             GetSellerInvoiceDetailReq req = new GetSellerInvoiceDetailReq();
             req.code = "TI200605135228880002";
-            GetSellerInvoiceDetailResp resp = invoiceSdk.getSellerInvoiceDetail(req);
+            GetSellerInvoiceDetailResp resp = invoiceSdk.GetSellerInvoiceDetail(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -75,7 +75,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             builder.unitPrice = 0.2;
             builder.taxRate = 0.2;
             req.invoiceProduct.Add(builder);
-            OpenInvoiceResp resp = invoiceSdk.openInvoice(req);
+            OpenInvoiceResp resp = invoiceSdk.OpenInvoice(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -85,7 +85,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             BatchDeleteInvoiceReq req = new BatchDeleteInvoiceReq();
             req.code = new List<string>();
             req.code.Add("InvCode");
-            BatchDeleteInvoiceResp resp = invoiceSdk.batchDeleteInvoice(req);
+            BatchDeleteInvoiceResp resp = invoiceSdk.BatchDeleteInvoice(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
     }
