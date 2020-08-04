@@ -24,7 +24,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public PagingBuyerOrderResp pagingBuyerOrder(PagingBuyerOrderReq req)
+        public PagingBuyerOrderResp PagingBuyerOrder(PagingBuyerOrderReq req)
         {
             string url = baseUrl + "/open/buyer/order/paging";
             Dictionary<string, string> dic = GenSignToMap(req);
@@ -38,7 +38,7 @@ namespace com.usoft.sdk.b2b.client.v2
         /// </summary>
         /// <param name="req"></param>
         /// <returns></returns>
-        public GetBuyerOrderDetailResp getBuyerOrderDetail(GetBuyerOrderDetailReq req)
+        public GetBuyerOrderDetailResp GetBuyerOrderDetail(GetBuyerOrderDetailReq req)
         {
             string url = baseUrl + "/open/buyer/order/detail/get";
             Dictionary<string, string> dic = GenSignToMap(req);

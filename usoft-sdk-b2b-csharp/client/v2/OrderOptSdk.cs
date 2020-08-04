@@ -188,6 +188,20 @@ namespace com.usoft.sdk.b2b.client.v2
         }
 
         /// <summary>
+        /// 修改发货数量
+        /// </summary>
+        /// <param name="req"></param>
+        /// <returns></returns>
+        public UpdateDeliveryQuantityResp UpdateDeliveryQuantity(UpdateDeliveryQuantityReq req)
+        {
+            string url = baseUrl + "/open/order/product/reply/batch";
+            string paramJson = GenSignToJson(req);
+            string respJson = HttpUtil.DoPost(url, paramJson, timeout);
+            UpdateDeliveryQuantityResp resp = JsonUtil.ToObject<UpdateDeliveryQuantityResp>(respJson);
+            return resp;
+        }
+
+        /// <summary>
         /// 批量更新验收单产品
         /// </summary>
         /// <param name="req"></param>

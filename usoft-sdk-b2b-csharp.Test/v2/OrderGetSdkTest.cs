@@ -23,7 +23,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
             PagingBuyerOrderReq req = new PagingBuyerOrderReq();
             req.pageSize = 1;
             req.pageNumber = 10;
-            PagingBuyerOrderResp resp = orderGetSdk.pagingBuyerOrder(req);
+            PagingBuyerOrderResp resp = orderGetSdk.PagingBuyerOrder(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
@@ -33,7 +33,7 @@ namespace usoft_sdk_b2b_csharp.Test.v2
         {
             GetBuyerOrderDetailReq req = new GetBuyerOrderDetailReq();
             req.orderCode = "OR200526046405671102";
-            GetBuyerOrderDetailResp resp = orderGetSdk.getBuyerOrderDetail(req);
+            GetBuyerOrderDetailResp resp = orderGetSdk.GetBuyerOrderDetail(req);
             Console.WriteLine(JsonUtil.ToJSON(resp));
         }
 
